@@ -1,5 +1,4 @@
 # Transit Delay Prediction 🚦
-# Project initialized
 A machine learning system to predict delays in public transit based on real-time GPS, weather, and route data. Designed for intelligent transport operations.
 
 ---
@@ -22,6 +21,18 @@ A machine learning system to predict delays in public transit based on real-time
 
 ## 📊 Use Case
 Designed for transit authorities to predict vehicle delays and proactively inform routing and operations teams.
+
+---
+
+## 🔍 SHAP Summary Plot
+
+This plot shows which features most influence the model’s delay predictions:
+
+![SHAP Plot](figures/shap_plot.png)
+
+> 🔵 Blue = Low feature value  🔴 Red = High feature value  
+The horizontal position represents the effect of a feature on the model's output. Dots further from the center have a stronger influence on the prediction.
+
 
 ---
 
