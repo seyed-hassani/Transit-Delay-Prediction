@@ -1,27 +1,33 @@
 # Transit Delay Prediction 🚦
 
-A machine learning system to predict public transit delays using real-time data.
+A machine learning system to predict delays in public transit based on real-time GPS, weather, and route data. Designed for intelligent transport operations.
+
+---
 
 ## 🚀 Features
-- Predicts delays using GPS, weather, and route data.
-- AWS Lambda deployment with containerized packaging.
-- Power BI dashboard to visualize delay likelihoods.
-- SHAP integration for model explainability.
+- Predicts delays using historical and real-time features (route ID, GPS, weather)
+- Deployed on **AWS Lambda** using **Docker**
+- Visualized in **Power BI** for operational monitoring
+- Integrated with **SHAP** for model explainability
+
+---
 
 ## 🛠 Tech Stack
-- Python, Pandas, Scikit-learn
-- AWS Lambda, Docker
-- Power BI
-- SHAP
+- **Python**, **Pandas**, **Scikit-learn**
+- **AWS Lambda**, **Docker**
+- **Power BI**
+- **SHAP**
 
-## 🔧 How It Works
-1. Input: Route ID, GPS logs, weather status, timestamp
-2. Output: Delay classification (on-time vs delayed)
-3. Updates Power BI in real-time for operational teams
+---
 
-## ⚙️ Setup
+## 📊 Use Case
+Designed for transit authorities to predict vehicle delays and proactively inform routing and operations teams.
+
+---
+
+## 🔧 Setup Instructions
+
+### 1. Clone the repository
 ```bash
 git clone https://github.com/your_username/transit-delay-prediction.git
 cd transit-delay-prediction
-pip install -r requirements.txt
-python train_model.py
