@@ -1,10 +1,13 @@
 # src/train_model.py
-import pandas as pd
+import joblib
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
-import joblib
 import os
+
+from preprocess import load_and_clean  # ✅ This line is required
+import config
+
 
 def main():
     data_path = "data/transit_data.csv"
