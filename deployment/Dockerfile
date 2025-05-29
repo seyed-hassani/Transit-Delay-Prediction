@@ -11,4 +11,5 @@ COPY src/ ./src/
 COPY models/ ./models/
 
 # Set the command to your Lambda handler
-CMD ["src.train_model.main"]
+CMD ["src.lambda_handler.lambda_handler"]
+
