@@ -1,0 +1,18 @@
+# deployment/deploy_instructions.txt
+
+To deploy the Transit Delay Prediction model to AWS Lambda:
+
+1. Build Docker Image:
+   docker build -t transit-delay-lambda .
+
+2. Tag the image for ECR (replace <your_ecr_url>):
+   docker tag transit-delay-lambda:latest <your_ecr_url>:latest
+
+3. Push the image:
+   docker push <your_ecr_url>:latest
+
+4. Create AWS Lambda using container image:
+   Use AWS Console or CLI to create a new Lambda using the pushed container image.
+
+5. (Optional) Test Lambda:
+   Set the entry point to: src.train_model.main
