@@ -31,8 +31,12 @@ This plot shows which features most influence the model’s delay predictions:
 ![SHAP Plot](figures/shap_plot.png)
 
 > 🔵 Blue = Low feature value  🔴 Red = High feature value  
-The horizontal position represents the effect of a feature on the model's output. Dots further from the center have a stronger influence on the prediction.
-
+The horizontal axis shows the impact of a feature on the prediction (delay or not).  
+The vertical axis lists the most important features:
+- **gps_speed**: Speed of the vehicle in km/h
+- **route_id**: Transit route number
+- **weather_code**: Weather condition (0: Clear, 1: Rain, 2: Snow, 3: Fog)
+- **hour**: Hour of the day (from timestamp)
 
 ---
 
