@@ -12,9 +12,9 @@ def main():
         print("❌ Data file not found!")
         return
 
-    df = pd.read_csv(data_path)
-    X = df[['gps_speed', 'route_id', 'weather_code', 'hour']]
-    y = df['delayed']
+    df = load_and_clean(config.DATA_PATH)
+    X = df[config.FEATURES]
+    y = df[config.TARGET]
 
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
     model = RandomForestClassifier()
