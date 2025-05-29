@@ -2,6 +2,16 @@
 A machine learning system to predict delays in public transit based on real-time GPS, weather, and route data. Designed for intelligent transport operations.
 
 ---
+## 🔬 Individual Feature Impact
+
+Explore how each feature influences transit delay predictions:
+
+| Feature | SHAP Dependence Plot |
+|---------|----------------------|
+| gps_speed | ![gps_speed](figures/shap_gps_speed.png) |
+| route_id | ![route_id](figures/shap_route_id.png) |
+| weather_code | ![weather_code](figures/shap_weather_code.png) |
+| hour | ![hour](figures/shap_hour.png) |
 
 ## 🚀 Features
 - Predicts delays using historical and real-time features (route ID, GPS, weather)
