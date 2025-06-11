@@ -1,14 +1,14 @@
-# Transit Delay Prediction 🚦
+# Transit Delay Prediction 
 A machine learning system to predict delays in public transit based on real-time GPS, weather, and route data. Designed for intelligent transport operations.
 
 ---
-## 📈 Power BI Dashboard
+##  Power BI Dashboard
 
 This dashboard visualizes delay predictions and their relationships to GPS speed, route ID, and weather conditions.
 
 ![Power BI Dashboard](figures/dashboard.png)
 
-## 🚀 Features
+##  Features
 - Predicts delays using historical and real-time features (route ID, GPS, weather)
 - Deployed on **AWS Lambda** using **Docker**
 - Visualized in **Power BI** for operational monitoring
@@ -16,7 +16,7 @@ This dashboard visualizes delay predictions and their relationships to GPS speed
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 - **Python**, **Pandas**, **Scikit-learn**
 - **AWS Lambda**, **Docker**
 - **Power BI**
@@ -24,12 +24,12 @@ This dashboard visualizes delay predictions and their relationships to GPS speed
 
 ---
 
-## 📊 Use Case
+##  Use Case
 Designed for transit authorities to predict vehicle delays and proactively inform routing and operations teams.
 
 ---
 
-## 🔍 SHAP Summary Plot
+##  SHAP Summary Plot
 
 This plot shows which features most influence the model’s delay predictions:
 
@@ -45,7 +45,7 @@ The vertical axis lists the most important features:
 
 ---
 
-## 🔧 Setup Instructions
+##  Setup Instructions
 
 ### 1. Clone the repository
 ```bash
